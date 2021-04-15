@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+
+
+    <title>Sales Management</title>
+</head>
+
+<body>
+    <div class="container">
+        <ul id="navigation" class="tabs">
+            <li id="panel1" class="nav tab-link current" data-tab="user-inputs">
+                <div class="number one red">1</div> DEFINITION
+            </li>
+            <li id="panel2" class="nav tab-link" data-tab="tab-2">
+                <div class="number">2</div>CHOOSE PRODUCTS
+            </li>
+            <li class="nav tab-link"data-tab="tab-3" >
+                <div class="number">3</div>EXCLUDE PRODUCTS
+            </li>
+            <li class="nav bonus tab-link"data-tab="tab-4">
+                <div class="number light">4</div>
+                <div id="icon" class="infoIcon"><img src="./icons/info.png">
+                    <span class="tooltiptext">Lorem ipsum</span>
+                </div>
+                <p>PRODUCTS</p>
+            </li>
+            <li class="nav bonus tab-link"data-tab="tab-5" >
+                <div class="number light">5</div>
+                <div id="icon" class="infoIcon"><img src="./icons/info.png"><span class="tooltiptext">Lorem ipsum</span></div>
+                <p>PRODUCTS LIMITS</p>
+            </li>
+            <li class="nav tab-link"data-tab="tab-6">
+                <div class="number">6</div>CHOOSE CLIENTS
+            </li></a>
+            <li class="nav tab-link" data-tab="tab-7">
+                <div class="number">7</div>EXCLUDE CLIENTS
+            </li>
+            <li class="nav tab-link"data-tab="tab-8">
+                <div class="number">8</div>CLIENTS LIMITS
+            </li>
+            <li type="submit" class="nav tab-link btn btn-success btn-save" data-tab="tab-9">
+                <div class="number">9</div>SUMMARY
+            </li>
+        </ul>
+        <div id="tab-2" class="tab-content">
+            <h4>CHOOSE PRODUCTS</h4><br>
+            <br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. <br>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. <br>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur.</p>
+        </div>
+        <div id="tab-3" class="tab-content">
+            <h4>EXCLUDE PRODUCTS</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. <br>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. <br>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur.</p>
+        </div>
+        <div id="tab-4" class="tab-content">
+            <h4>PRODUCTS</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. <br>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. <br>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur.</p>
+        </div>
+        <div id="tab-5" class="tab-content">
+            <h4>PRODUCTS LIMITS</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. <br>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. <br>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur.</p>
+        </div>
+        <div id="tab-6" class="tab-content">
+            <h4>CHOOSE CLIENTS</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. <br>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. <br>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur.</p>
+        </div>
+        <div id="tab-7" class="tab-content">
+            <h4>EXCLUDE CLIENTS</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. <br>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. <br>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur.</p>
+        </div>
+        <div id="tab-8" class="tab-content">
+            <h4>CLIENTS LIMITS</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. <br>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. <br>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur.</p>
+        </div>
+        <div id="tab-9" class="tab-content">
+            
+            <table class="data-table">
+                <thead>
+                    <th>Nazwa promocji</th>
+                    <th>Edytuj</th>
+                    <th>Usuń</th>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+        
+    
+        <div id="user-inputs" class="tab-content current">
+         
+
+            
+                <div class="description">
+
+                    <div class="heading">
+                        <h3>Description</h3>
+                        <p class="required">*is required</p>
+                    </div>
+                    <span class="line"></span>
+                    <form id="main-form">
+                    <div class="input-field required-field">
+                        <input type="text" id="marketing-name" placeholder="Marketing name" class="input auto-save" name="marketing" >
+                        <div id="icon" class="infoIconInputs"><img src="./icons/info.png"><span class="tooltiptext">Lorem
+                                ipsum</span></div>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="technical-name" placeholder="Technical name" class="input auto-save"name="technical">
+                        <div id="icon" class="infoIconInputs"><img src="./icons/info.png"><span class="tooltiptext">Lorem
+                                ipsum</span></div>
+                    </div>
+                    <div class="input-field">
+                        <textarea name="description" placeholder="Description" rows="8" cols="20"
+                            class="input auto-save"></textarea>
+                        <div id="icon" class="infoIconInputs"><img src="./icons/info.png"><span class="tooltiptext">Lorem
+                                ipsum</span></div>
+                    </div>
+                </form>
+                    <div class="promotion">
+                        <h3>Catalog promotion tutorial:</h3>
+                        <span class="line"></span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. <br>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat. <br>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. <br>
+                        </p><br><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. <br>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat. <br>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. <br>
+                        </p><br><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. <br>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat. <br>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. <br>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="conditions">
+
+                    <div class="heading">
+                        <h3>Conditions</h3>
+
+                        <div class="required">*is required</div>
+                    </div>
+                    <span class="line"></span>
+
+                    <form>
+                        <div class="input-field required-field">
+                            <select id="portal" class="input auto-save">
+                                <option value="" disabled selected>Portal</option>
+                                <option value="lorem">Lorem</option>
+                                <option value="ispum">Ipsum</option>
+                                <option value="dolor">Dolor</option>
+                            </select>
+                            <div id="icon" class="infoIconInputs"><img src="./icons/info.png"><span class="tooltiptext">Lorem
+                                    ipsum</span></div>
+                        </div>
+                        <div class="input-field required-field">
+                            <select id="type" class="input auto-save">
+                                <option value="" disabled selected>Type</option>
+                                <option value="consectetur">consectetur</option>
+                                <option value="adipiscing ">adipiscing</option>
+                                <option value="elit">elit</option>
+                            </select>
+                            <div id="icon" class="infoIconInputs"><img src="./icons/info.png"><span class="tooltiptext">Lorem
+                                    ipsum</span></div>
+                        </div>
+                    </form>
+                    <div class="benefitAmount">
+                        <div class="heading-benefit">
+                            <h5>Benefit amount</h5>
+                            <div id="icon" class="infoIconBenefit"><img src="./icons/info.png"><span class="tooltiptext">Lorem
+                                    ipsum</span></div>
+                        </div>
+                        <span class="line"></span>
+                        <div class="calendars">
+                            <div class="calendarInput required-field">
+                                <input type="text" id="start-date" class="auto-save" placeholder="Start date">
+                                <span class="calendarIcon"><img src="./icons/"></span>
+                            </div>
+                            <div class="calendarInput">
+                                <input type="text" id="end-date" class="auto-save" placeholder="End date">
+                                <span class="calendarIcon"><img src="./icons/calendar-symbol.png"></span>
+                            </div>
+                            <div id="icon" class="infoIconInputsEndDate"><img src="./icons/info.png"><span
+                                    class="tooltiptext">Lorem ipsum</span></div>
+                        </div>
+                        <br>
+                        <form>
+                            <div class="radios">
+                                <input type="radio" id="business-conditions"class="auto-save" name="business-conditions">
+                                <label for="business-conditions">Business conditions</label>
+                                <input type="radio" id="base-price" class="auto-save"name="base-price">
+                                <div id="icon" class="infoIconRadio"><img src="./icons/info.png"><span class="tooltiptext">Lorem
+                                        ipsum</span></div>
+                                <label for="base-price">Base price 100%</label><br><br>
+                            </div>
+                            <input type="checkbox" id="connect"class="auto-save">
+                            <div id="icon" class="infoIconCheckbox"><img src="./icons/info.png"><span class="tooltiptext">Lorem
+                                    ipsum</span></div>
+                            <label for="connect">Connect with other promotions</label>
+                            <br><br>
+                            <input type="checkbox" id="back-promotion" class="auto-save">
+                            <div id="icon" class="infoIconCheckbox"><img src="./icons/info.png"><span class="tooltiptext">Lorem
+                                    ipsum</span></div>
+                            <label for="back-promotion">Back promotion</label>
+                        </form>
+                    
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./js/app.js"></script>
+    <script src="./js/savy.min.js"></script>
+    
+</body>
+
+</html>
